@@ -1,0 +1,33 @@
+1.使用addClass()函数动态添加类
+使用addClass()函数可以向指定的页面元素添加样式类,
+实现实时增加页面元素动态效果，例如，鼠标移动某段文字时，文字产生字体加重
+，放大或改变颜色的效果
+
+<h2 id="h2-caption">超实用的jQuery代码段,jQuery如何正确使用addClass()函数</h2>
+<hr><br>
+<h3>How to use addClass() method properly</h3>
+<p>This paragraph's font-size is 8px</p>
+<p>This paragraph's font-size is 24px</p>
+<button>使用addClass()函数添加类</button>
+<script type="text/javascript">
+	$(function(){
+		$("button").click(function(){
+			$('p').addClass(function(n){
+				return 'par_'+n;
+			})
+		})	
+	})
+</script>
+
+
+ <div class="btn-toolbar">
+ 	<div class="btn-group">
+ 		<a class="btn" href="#"><i class="icon-play"></i></a>
+ 		<a class="btn" href="#"><i class="icon-pause"></i></a>
+ 		<a class="btn" href="#"><i class="icon-stop"></i></a>
+ 		<a class="btn" href="#"><i class="icon-backward"></i></a>
+ 		<a class="btn" href="#"><i class="icon-forward"></i></a>
+ 	</div>
+ </div>
+ 
+ 

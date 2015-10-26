@@ -1,0 +1,7 @@
+使用时，只需要在标签中引入相应的图标样式即可，建议使用<i>标签定义图标
+然后将<i>标签放到任何需要的地方
+<i class="icon-search"></i>
+<span class=icon-search"></span>
+<div class="icon-search"></div>
+要使用反色图标，只需要一个额外的类icon-white，利用它可以
+设计图标的交互状态
